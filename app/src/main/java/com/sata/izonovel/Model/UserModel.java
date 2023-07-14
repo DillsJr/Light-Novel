@@ -1,9 +1,23 @@
 package com.sata.izonovel.Model;
 
+
 public class UserModel {
+    public UserModel.document getDocument() {
+        return document;
+    }
+
+    public void setDocument(UserModel.document document) {
+        this.document = document;
+    }
+
     private document document;
 
     public class document{
+        private String _id;
+        private String username;
+        private String password;
+        private String fullName;
+
         public String get_id() {
             return _id;
         }
@@ -13,42 +27,27 @@ public class UserModel {
         }
 
         public String getUsername() {
-            return Username;
+            return username;
         }
 
         public void setUsername(String username) {
-            Username = username;
+            this.username = username;
         }
 
         public String getPassword() {
-            return Password;
+            return password;
         }
 
         public void setPassword(String password) {
-            Password = password;
+            this.password = password;
         }
 
-        public String getFullname() {
-            return Fullname;
+        public String getFullName() {
+            return fullName;
         }
 
-        public void setFullname(String fullname) {
-            Fullname = fullname;
+        public void setFullName(String fullName) {
+            this.fullName = fullName;
         }
-
-        public String getEmail() {
-            return Email;
-        }
-
-        public void setEmail(String email) {
-            Email = email;
-        }
-
-        private String _id;
-        private String Username;
-        private String Password;
-        private String Fullname;
-        private String Email;
-
     }
 }

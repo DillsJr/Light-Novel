@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,29 +15,121 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="210dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/bg"
-                tools:ignore="ContentDescription" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_marginTop="-260dp"
+                    android:elevation="2dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/myrect" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="-245dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:layout_margin="15dp"
+                    android:clickable="true"
+                    android:layout_height="wrap_content"
+                    tools:ignore="DisableBaselineAlignment">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_weight="7"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/baseline_account_circle_24"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="2"
+                        android:layout_marginTop="20dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_user"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:text="User"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="alphajr@gmail.com"
+                            android:textColor="@color/white"/>
+
+                        <Button
+                            android:id="@+id/btn_signin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="-50dp"
+                            android:layout_marginRight="25dp"
+                            android:background="@drawable/si"
+                            android:text="SIGN IN"
+                            android:textColor="@color/black" />
+                    </LinearLayout>
+                </LinearLayout>
+                <EditText
+                    android:layout_width="389dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-40dp"
+                    tools:ignore="Autofill,InefficientWeight,LabelFor,SpeakableTextPresentCheck,TextFields,TouchTargetSizeCheck" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-100dp"
+                android:layout_marginTop="3dp"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
                 android:orientation="vertical">
 
+                <Button
+                    android:id="@+id/btn_sign_out"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/so"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:text="SIGN OUT"/>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Main Menu"
-                    android:textColor="@color/black"
                     android:textSize="25dp"
                     android:textStyle="bold"
-                    tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+                    android:textColor="@color/white"
+                    android:text="Main Menu"/>
 
                 <LinearLayout
                     android:id="@+id/menu_one"
@@ -46,14 +139,12 @@
                     android:padding="10dp"
                     android:layout_margin="5dp"
                     android:clickable="true"
-                    android:layout_height="wrap_content"
-                    tools:ignore="DisableBaselineAlignment">
+                    android:layout_height="wrap_content">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_weight="4"
                         android:layout_marginRight="5dp"
-                        android:layout_height="wrap_content"
-                        tools:ignore="RtlHardcoded">
+                        android:layout_height="wrap_content">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
@@ -65,22 +156,19 @@
                         android:orientation="vertical"
                         android:layout_weight="2"
                         android:layout_height="wrap_content">
-
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Daftar Novel"
+                            android:id="@+id/daftar_novel"
                             android:textColor="@color/text_header"
+                            android:layout_width="match_parent"
+                            android:text="Daftar Novel"
                             android:textSize="16dp"
                             android:textStyle="bold"
-                            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
-
+                            android:layout_height="wrap_content"/>
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="see yor list of novel"
                             android:textColor="@color/text_sub"
-                            tools:ignore="HardcodedText,TextContrastCheck" />
+                            android:layout_width="match_parent"
+                            android:text="see yor list of novel"
+                            android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
 
@@ -90,59 +178,52 @@
                     android:background="@drawable/border"
                     android:padding="10dp"
                     android:layout_margin="5dp"
-                    android:layout_height="wrap_content"
-                    tools:ignore="DisableBaselineAlignment">
+                    android:layout_height="wrap_content">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_weight="4"
                         android:layout_marginRight="5dp"
-                        android:layout_height="wrap_content"
-                        tools:ignore="RtlHardcoded">
+                        android:layout_height="wrap_content">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
-                            android:background="@drawable/baseline_upload_24"/>
+                            android:background="@drawable/baseline_border_color_24"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:orientation="vertical"
                         android:layout_weight="2"
                         android:layout_height="wrap_content">
-
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Input Novel"
+                            android:id="@+id/tvInputNovel"
                             android:textColor="@color/text_header"
+                            android:layout_width="match_parent"
+                            android:text="Input Novel"
                             android:textSize="16dp"
                             android:textStyle="bold"
-                            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
-
+                            android:layout_height="wrap_content"/>
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="add a new novel"
                             android:textColor="@color/text_sub"
-                            tools:ignore="HardcodedText,TextContrastCheck" />
+                            android:layout_width="match_parent"
+                            android:text="add a new novel"
+                            android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/informasi_pengguna"
+
                     android:clickable="true"
                     android:layout_width="match_parent"
                     android:orientation="horizontal"
                     android:background="@drawable/border"
                     android:padding="10dp"
                     android:layout_margin="5dp"
-                    android:layout_height="wrap_content"
-                    tools:ignore="DisableBaselineAlignment">
+                    android:layout_height="wrap_content">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_weight="4"
                         android:layout_marginRight="5dp"
-                        android:layout_height="wrap_content"
-                        tools:ignore="RtlHardcoded">
+                        android:layout_height="wrap_content">
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
@@ -154,22 +235,19 @@
                         android:orientation="vertical"
                         android:layout_weight="2"
                         android:layout_height="wrap_content">
-
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Informasi pengguna"
+                            android:id="@+id/informasi_pengguna"
                             android:textColor="@color/text_header"
+                            android:layout_width="match_parent"
+                            android:text="Informasi Pengguna"
                             android:textSize="16dp"
                             android:textStyle="bold"
-                            tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
-
+                            android:layout_height="wrap_content"/>
                         <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="change or modify account"
                             android:textColor="@color/text_sub"
-                            tools:ignore="HardcodedText,TextContrastCheck" />
+                            android:layout_width="match_parent"
+                            android:text="change or modify account"
+                            android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
@@ -177,41 +255,34 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:orientation="vertical"
-                android:id="@+id/favorit_pengguna"
-                android:clickable="true"
                 android:padding="10dp"
                 android:layout_height="wrap_content">
-
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Novel Favorite"
-                    android:textColor="@color/text_header_two"
-                    android:textSize="18dp"
                     android:textStyle="bold"
-                    tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+                    android:textSize="18dp"
+                    android:textColor="@color/text_header_two"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
-
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:text="Terbaik menurut pembaca"
-                        android:textColor="@color/text_sub"
-                        tools:ignore="HardcodedText,TextContrastCheck" />
-
+                        android:layout_weight="1"
+                        android:textColor="@color/text_sub"/>
                     <TextView
+                        android:id="@+id/favorite_more"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="3"
                         android:text="More"
-                        android:textAlignment="center"
-                        android:textColor="@color/text_header_two"
+                        android:layout_weight="3"
                         android:textStyle="bold"
-                        tools:ignore="HardcodedText" />
+                        android:textAlignment="center"
+                        android:textColor="@color/text_header_two"/>
                 </LinearLayout>
 
             </LinearLayout>
@@ -221,10 +292,10 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
-                tools:ignore="ObsoleteLayoutParam,UselessParent">
+                tools:ignore="UselessParent">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/box_one"
                     android:orientation="horizontal"
@@ -236,68 +307,19 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="20dp"
                         android:background="@drawable/border"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:background="@drawable/lksm"
-                            tools:ignore="ContentDescription" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:padding="7dp"
-                            android:text="Lookism"
-                            android:textColor="@color/text_sub"
-                            tools:ignore="HardcodedText,TextContrastCheck" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="200dp"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/border"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:background="@drawable/thebeginningaftertheend"
-                            tools:ignore="ContentDescription,ImageContrastCheck" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:padding="7dp"
-                            android:text="The Beginning After The End"
-                            android:textColor="@color/text_sub"
-                            tools:ignore="HardcodedText,TextContrastCheck" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="120dp"
-                        android:layout_height="200dp"
-                        android:layout_marginLeft="20dp"
-                        android:background="@drawable/border"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:background="@drawable/howtofight"
-                            tools:ignore="ContentDescription" />
+                            android:background="@drawable/howtofight" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="7dp"
                             android:text="How To Fight"
-                            android:textColor="@color/text_sub"
-                            tools:ignore="HardcodedText,TextContrastCheck" />
+                            android:textColor="@color/text_sub" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -305,22 +327,59 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="20dp"
                         android:background="@drawable/border"
-                        android:orientation="vertical"
-                        tools:ignore="RtlHardcoded">
+                        android:orientation="vertical">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:background="@drawable/theboxer"
-                            tools:ignore="ContentDescription" />
+                            android:background="@drawable/thebeginningaftertheend" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:text="The Beginning After The End"
+                            android:textColor="@color/text_sub" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@drawable/theboxer" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="7dp"
                             android:text="The Boxer"
-                            android:textColor="@color/text_sub"
-                            tools:ignore="HardcodedText" />
+                            android:textColor="@color/text_sub" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="120dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/border"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:background="@drawable/lksm" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="7dp"
+                            android:text="Lookism"
+                            android:textColor="@color/text_sub" />
                     </LinearLayout>
 
                 </LinearLayout>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -14,171 +15,101 @@
             android:padding="15dp"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="3"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="Judul Novel"
-                tools:ignore="HardcodedText,InefficientWeight" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:hint="Type Judul Novel"
-                tools:ignore="HardcodedText">
-
+                android:hint="Judul Novel">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/met_judul"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+                    android:id="@+id/met_judul"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:text="Pengarang"
-                tools:ignore="HardcodedText" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:hint="Type Pengarang"
-                tools:ignore="HardcodedText">
-
+                android:hint="Pengarang">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/met_pengarang"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+                    android:id="@+id/met_pengarang"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:text="Penerbit"
-                tools:ignore="HardcodedText" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:hint="Type Penerbit"
-                tools:ignore="HardcodedText">
-
+                android:hint="Penerbit">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/met_penerbit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+                    android:id="@+id/met_penerbit"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:text="Tahun Terbit"
-                tools:ignore="HardcodedText" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:hint="Type Tahun Terbit"
-                tools:ignore="HardcodedText">
-
+                android:hint="Tahun terbit">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/met_thn_terbit"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+                    android:id="@+id/met_tahun_terbit"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <TextView
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textStyle="bold"
                 android:layout_marginTop="10dp"
-                android:text="Genre"
-                tools:ignore="HardcodedText" />
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:hint="Genre"
                 android:orientation="horizontal">
-                <com.google.android.material.textfield.TextInputLayout
+                <AutoCompleteTextView
+                    android:id="@+id/act_genre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="3dp"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:hint="Type Genre"
-                    tools:ignore="HardcodedText">
+                    android:inputType="none"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/met_genre"
-                        android:layout_width="311dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        tools:ignore="TextContrastCheck" />
-                </com.google.android.material.textfield.TextInputLayout>
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="3dp"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="93dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="#3700B2"
-                        tools:ignore="SpeakableTextPresentCheck" />
-                </com.google.android.material.textfield.TextInputLayout>
-            </LinearLayout>
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:layout_marginTop="10dp"
-                android:text="Sinopsis"
-                tools:ignore="HardcodedText" />
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="10dp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:hint="Type Sinopsis"
-                tools:ignore="HardcodedText">
-
+                android:hint="Imange URl">
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/met_sinopsis"
                     android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    tools:ignore="TextContrastCheck,VisualLintTextFieldSize" />
+                    android:layout_height="wrap_content"
+                    android:id="@+id/met_img_url"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <Button
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:text="Submit Data"
-                android:layout_marginTop="10dp"
                 android:layout_height="wrap_content"
-                tools:ignore="HardcodedText,VisualLintButtonSize" />
+                android:layout_marginTop="10dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Sinopsis">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="8"
+                    android:gravity="top|start"
+                    android:id="@+id/met_sinopsis"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="simpan"
+                android:id="@+id/save_novel"/>
+
         </LinearLayout>
+
     </ScrollView>
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>
