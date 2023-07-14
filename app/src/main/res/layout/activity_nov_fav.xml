@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".NovFavActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:layout_marginTop="-10dp"
+                android:background="@color/black"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bgc"
+                tools:ignore="ContentDescription" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:padding="25dp"
+                android:layout_marginTop="-150dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="3dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Filter Data"
+                    tools:ignore="HardcodedText">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/met_filter"
+                        android:layout_width="300dp"
+                        android:background="@color/white"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="61dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#00BCD4"
+                        android:text="Cari"
+                        tools:ignore="HardcodedText,SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_one"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                tools:ignore="DisableBaselineAlignment">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="6"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:background="@drawable/thebeginningaftertheend"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Beginning After The End"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="19 - 03 - 2021 || TurtleMe"
+                        android:textColor="@color/text_sub"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Raja Grey yang tak tertandingi didunia, telah bereinkarnasi ke dunia baru yang penuh dengan sihir dan monster. Dia mendapatkan kesempatan kedua untuk kehidupannya, namun dibawah kedamaian dunia baru ada arus yang mengancam untuk menghancurkan semua usahanya."
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,VisualLintLongText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="116dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/baseline_manage_search_24"
+                                tools:ignore="ContentDescription" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Genre"
+                                    android:textColor="@color/text_header_two"
+                                    tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Fantasy"
+                                    android:textColor="@color/text_header_two"
+                                    tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            tools:ignore="RtlHardcoded">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/baseline_library_books_24"
+                                tools:ignore="ContentDescription" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Chapter"
+                                    android:textColor="@color/text_header_two"
+                                    tools:ignore="HardcodedText,TextContrastCheck" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="1 ( Satu )"
+                                    android:textColor="@color/text_header_two"
+                                    tools:ignore="HardcodedText,TextContrastCheck" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_two"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                android:clickable="true"
+                android:layout_height="wrap_content"
+                tools:ignore="DisableBaselineAlignment">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="6"
+                    android:layout_marginRight="5dp"
+                    android:layout_height="wrap_content"
+                    tools:ignore="RtlHardcoded">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="150dp"
+                        android:background="@drawable/lksm"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lookism"
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="13 - 11 - 2014 || Taejoon Park"
+                        android:textColor="@color/text_sub"
+                        tools:ignore="HardcodedText,TextContrastCheck" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="Suatu hari di tempat tinggal barunya, Park Hyung terbangun dengan tubuh orang lain. Sementara, tubuh lamanya tergeletak tertidur di sampingnya. Tubuh baru Park Hyung Seok tampak sehat dan sempurna, wajahnya juga sangat tampan. Cowok ini punya 2 wujud! Pilih yang mana ya..?"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        tools:ignore="HardcodedText,SpUsage,TextSizeCheck,VisualLintLongText" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="116dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/baseline_manage_search_24"
+                                tools:ignore="ContentDescription" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Genre"
+                                    android:textColor="@color/text_header_two"
+                                    tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Action"
+                                    android:textColor="@color/text_header_two"
+                                    tools:ignore="HardcodedText,RtlHardcoded,TextContrastCheck" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            tools:ignore="RtlHardcoded">
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="50dp"
+                                android:background="@drawable/baseline_library_books_24"
+                                tools:ignore="ContentDescription" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="Chapter"
+                                    android:textColor="@color/text_header_two"
+                                    tools:ignore="HardcodedText,TextContrastCheck" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="1 ( Satu )"
+                                    android:textColor="@color/text_header_two"
+                                    tools:ignore="HardcodedText,TextContrastCheck" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
