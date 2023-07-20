@@ -1,26 +1,26 @@
 package com.sata.izonovel;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
+        import androidx.appcompat.app.AlertDialog;
+        import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
-import android.app.ProgressDialog;
-import android.content.DialogInterface;
-import android.graphics.Color;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
-import android.widget.Button;
+        import android.annotation.SuppressLint;
+        import android.app.ProgressDialog;
+        import android.content.DialogInterface;
+        import android.graphics.Color;
+        import android.os.Bundle;
+        import android.view.View;
+        import android.widget.ArrayAdapter;
+        import android.widget.AutoCompleteTextView;
+        import android.widget.Button;
 
-import com.google.android.material.textfield.TextInputEditText;
-import com.sata.izonovel.Model.InsertNovelModel;
-import com.sata.izonovel.Model.InsertResponseModel;
-import com.sata.izonovel.Retrofit.APIService;
+        import com.google.android.material.textfield.TextInputEditText;
+        import com.sata.izonovel.Model.InsertNovelModel;
+        import com.sata.izonovel.Model.InsertResponseModel;
+        import com.sata.izonovel.Retrofit.APIService;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+        import retrofit2.Call;
+        import retrofit2.Callback;
+        import retrofit2.Response;
 
 public class FormInptActivity extends AppCompatActivity {
     String[] genre = {"Action", "Romance", "Fantasi", "Horor", "Comedy", "Sci-fi"};
@@ -113,3 +113,4 @@ public class FormInptActivity extends AppCompatActivity {
         });
     }
 }
+

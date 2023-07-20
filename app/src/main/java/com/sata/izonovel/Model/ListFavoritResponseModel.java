@@ -85,5 +85,15 @@ public class ListFavoritResponseModel {public List<ListFavoritResponseModel.Docu
         private String sinopsis;
         private String tahunTerbit;
         private String isFavorite;
+
+        public String getGambar() {
+            return gambar;
+        }
+
+        public void setGambar(String gambar) {
+            this.gambar = gambar;
+        }
+
+        private String gambar;
     }
 }

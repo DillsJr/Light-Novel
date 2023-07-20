@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@drawable/p"
     tools:context=".MainActivity">
     <ScrollView
         android:layout_width="match_parent"
@@ -167,7 +167,7 @@
                         <TextView
                             android:textColor="@color/text_sub"
                             android:layout_width="match_parent"
-                            android:text="see yor list of novel"
+                            android:text="see your list of novel"
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -289,7 +289,7 @@
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="250dp"
                 android:layout_centerHorizontal="true"
                 android:layout_centerVertical="true"
                 tools:ignore="UselessParent">
@@ -307,9 +307,13 @@
                         android:layout_height="200dp"
                         android:layout_marginLeft="20dp"
                         android:background="@drawable/border"
-                        android:orientation="vertical">
+                        android:id="@+id/htf"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:onClick="NovelClick">
 
                         <ImageView
+                            android:id="@+id/htfImg"
                             android:layout_width="match_parent"
                             android:layout_height="150dp"
                             android:background="@drawable/howtofight" />
@@ -319,13 +323,19 @@
                             android:layout_height="wrap_content"
                             android:padding="7dp"
                             android:text="How To Fight"
-                            android:textColor="@color/text_sub" />
+                            android:textAlignment="center"
+                            android:textColor="@color/text_header"
+                            android:textStyle="bold" />
                     </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="120dp"
                         android:layout_height="200dp"
                         android:layout_marginLeft="20dp"
+                        android:clickable="true"
+                        android:id="@+id/tbate"
+                        android:onClick="NovelClick"
                         android:background="@drawable/border"
                         android:orientation="vertical">
 
@@ -338,14 +348,20 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="7dp"
+                            android:orientation="vertical"
+                            android:textAlignment="center"
                             android:text="The Beginning After The End"
-                            android:textColor="@color/text_sub" />
+                            android:textColor="@color/text_header"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="120dp"
                         android:layout_height="200dp"
                         android:layout_marginLeft="20dp"
+                        android:clickable="true"
+                        android:id="@+id/tb"
+                        android:onClick="NovelClick"
                         android:background="@drawable/border"
                         android:orientation="vertical">
 
@@ -358,13 +374,18 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="7dp"
+                            android:textAlignment="center"
                             android:text="The Boxer"
-                            android:textColor="@color/text_sub" />
+                            android:textColor="@color/text_header"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="120dp"
                         android:layout_height="200dp"
+                        android:clickable="true"
+                        android:id="@+id/lookism"
+                        android:onClick="NovelClick"
                         android:layout_marginLeft="20dp"
                         android:background="@drawable/border"
                         android:orientation="vertical">
@@ -378,8 +399,10 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:padding="7dp"
+                            android:textAlignment="center"
                             android:text="Lookism"
-                            android:textColor="@color/text_sub" />
+                            android:textColor="@color/text_header"
+                            android:textStyle="bold" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -387,3 +410,4 @@
         </LinearLayout>
     </ScrollView>
 </androidx.appcompat.widget.LinearLayoutCompat>
+

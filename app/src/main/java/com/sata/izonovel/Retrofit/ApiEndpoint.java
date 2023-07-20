@@ -3,6 +3,7 @@ package com.sata.izonovel.Retrofit;
 import com.sata.izonovel.Model.InsertNovelModel;
 import com.sata.izonovel.Model.InsertResponseModel;
 import com.sata.izonovel.Model.ListFavoritRequestModel;
+import com.sata.izonovel.Model.ListFavoritResponseModel;
 import com.sata.izonovel.Model.ListNovelRequestModel;
 import com.sata.izonovel.Model.ListNovelResponseModel;
 import com.sata.izonovel.Model.LoginRequestModel;
@@ -37,7 +38,7 @@ public interface ApiEndpoint
 
     @Headers({"api-key:" + API_KEY, "Content-Type:application/json"})
     @POST("app/data-yvczw/endpoint/data/v1/action/find")
-    Call<ListFavoritRequestModel> FavoriteNovel(@Body ListFavoritRequestModel listFavoritRequestModel);
+    Call<ListFavoritResponseModel> favoriteNovel(@Body ListFavoritRequestModel listFavoritRequestModel);
 
 
 

@@ -49,7 +49,7 @@ public class DaftarNovelActivity extends AppCompatActivity {
         listNovelRequestModel.setFilter("");
 
         progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Loading...");
+        progressDialog.setMessage("Tunggu Masbroo...");
         progressDialog.show();
 
         APIService.endpoint().litDaftarNovel(listNovelRequestModel).enqueue(new Callback<ListNovelResponseModel>() {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/border"
         android:padding="10dp"
@@ -26,12 +27,14 @@
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="Menanti Hari Berganti"/>
+
             <TextView
                 android:id="@+id/tvTahunDanPengarang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="2020-10-01  | Titi sandrina"
                 android:textSize="11dp"
-                android:text="2020-10-01  | Titi sandrina"/>
+                tools:ignore="TextSizeCheck" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -47,7 +50,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/baseline_movie_filter_24"/>
+                        android:src="@drawable/baseline_topic_24"/>
                     <TextView
                         android:id="@+id/tvGenre"
                         android:layout_width="wrap_content"
@@ -65,7 +68,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/baseline_movie_filter_24" />
+                        android:src="@drawable/baseline_library_books_24"/>
 
                     <TextView
                         android:layout_width="wrap_content"
